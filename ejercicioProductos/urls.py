@@ -17,12 +17,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from productosApp.views import *
 from paisesApp.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
-    path('chile/', chile),
-    path('argentina/', argentina),  # Agregar URL para Argentina
-    path('brasil/', brazil),  # Agregar URL para Brasil
+    path('electronica/', electronica),
+    path('juguetes/', juguetes),
+    path('ropa/', ropa),
+    path('paises/', paises, name='paises'),
+    path("chile/", chile),
+    path("argentina/", argentina),
+    path("brazil/", brazil)
 ]
+

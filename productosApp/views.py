@@ -10,7 +10,7 @@ def electronica(request):
         "producto1": "MAC",
         "producto2": "Celular",
         "producto3": "Playstation",
-        "url": "/www.inacap.cl",
+        "url": "templatePaises/index.html",
         "imagen": "imagenes/producto.jpg"
     }
     return render(request, "templatesProductos/productos.html", data)

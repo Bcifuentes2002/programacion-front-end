@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paises</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body class="container mt-5">
+    <div class="alert alert-info display-1 text-center">
+
+        Paises
+    </div>
+    <div class="row">
+        <div class="col"><a href="/chile" class="btn btn-outline-dark p-3 btn-info w-100"><b>Chile</b></a>
+            <div>
+                <img src="{% static chile %}"width="375px"alt=""/>
+                <ul style="list-style-type:none;">
+                    <br>
+                    <li><b>{{titulo_cl}}</b></li>
+                    <br>
+                    <li><b>{{información_cl}}</b></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col"><a href="/argentina" class="btn btn-outline-dark p-3 btn-info w-100"><b>Argentina</b></a>
+            <div>
+                <img src="{% static argentina %}"width="375px"alt=""/>
+                <ul style="list-style-type:none;">
+                    <br>
+                    <li><b>{{titulo_arg}}</b></li>
+                    <br>
+                    <li><b>{{información_arg}}</b></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col"><a href="/brazil" class="btn btn-outline-dark p-3 btn-info w-100"><b>Brasil</b></a>
+            <div>
+                <img src="{% static brazil %}"width="375px"alt=""/>
+                <ul style="list-style-type:none;">
+                    <br>
+                    <li><b>{{titulo_br}}</b></li>
+                    <br>
+                    <li><b>{{información_br}}</b></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <a href="/" class="btn btn-info mt-5">Django Shop</a>
+</body>
+
+</html>
